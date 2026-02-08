@@ -19,18 +19,7 @@ import os
 from fastmcp import FastMCP
 from datetime import datetime
 import shutil
-# OpenCV temporarily disabled - import cv2
-# Temporary placeholder for cv2 functionality
-class VideoCapturePlaceholder:
-    def __init__(self, path):
-        self.path = path
-    def get(self, prop):
-        return 30.0  # default FPS
-    def read(self):
-        return False, None
-    def release(self):
-        pass
-cv2 = type("cv2", (), {"VideoCapture": VideoCapturePlaceholder, "CAP_PROP_FPS": 0, "imwrite": lambda p, i: None})()
+import cv2
 import glob
 import torch
 import gc
