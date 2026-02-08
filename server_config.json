@@ -1,0 +1,3 @@
+{
+  "serverConfig": "{\"mcpServers\":{\"vggt-mps\":{\"command\":\"uvx\",\"args\":[\"--from\",\"iflow-mcp_jmanhype-vggt-mps\",\"vggt-mcp-server\"],\"values\":{}}}}"
+}
